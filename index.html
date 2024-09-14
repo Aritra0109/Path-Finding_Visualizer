@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pathfinding Visualizer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Pathfinding Visualizer</h1>
+        <div class="controls">
+            <button onclick="visualizeAlgorithm('dijkstra')">Dijkstra</button>
+            <button onclick="visualizeAlgorithm('aStar')">A*</button>
+            <button onclick="visualizeAlgorithm('bfs')">BFS</button>
+            <button onclick="visualizeAlgorithm('dfs')">DFS</button>
+            <button onclick="clearGrid()">Clear Grid</button>
+            <button onclick="generateRandomMaze()">Generate Maze</button>
+        </div>
+    </header>
+    <div id="grid" class="grid"></div>
+    <script src="app.js"></script>
+</body>
+</html>

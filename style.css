@@ -1,0 +1,98 @@
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: #0D7C66;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+h1 {
+    margin-bottom: 15px;
+    font-size: 2.5rem;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+button {
+    background-color: #fff;
+    color: #333;
+    border: 1px solid #0D7C66;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #41B3A2;
+    color: white;
+}
+
+#grid {
+    display: grid;
+    margin: 20px auto;
+    width: fit-content;
+    border: 2px solid #4CAF50;
+    grid-gap: 1px;
+    background-color: #ddd;
+}
+
+.cell {
+    width: 25px;
+    height: 25px;
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.cell.visited {
+    background-color: #A6E3E9;
+    transition: background-color 0.2s ease;
+}
+
+.cell.start {
+    background-color: green;
+}
+
+.cell.end {
+    background-color: red;
+}
+
+.cell.obstacle {
+    background-color: black;
+}
+
+.cell.path-dijkstra {
+    background-color: #F4CE14;
+}
+
+.cell.path-astar {
+    background-color: #B99470;
+}
+
+.cell.path-bfs {
+    background-color: #8967B3;
+}
+
+.cell.path-dfs {
+    background-color: #C96868;
+}
