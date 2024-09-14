@@ -96,3 +96,12 @@ button:hover {
 .cell.path-dfs {
     background-color: #C96868;
 }
+
+footer {
+    background-color: #0D7C66;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: auto;
+    font-size: 0.9rem;
+}
